@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="zxx"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Directory</title>
+
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap1.min.css">
+    <!-- themefy CSS -->
+    <link rel="stylesheet" href="vendors/themefy_icon/themify-icons.css">
+    <!-- swiper slider CSS -->
+    <link rel="stylesheet" href="vendors/swiper_slider/css/swiper.min.css">
+    <!-- select2 CSS -->
+    <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
+    <!-- select2 CSS -->
+    <link rel="stylesheet" href="vendors/niceselect/css/nice-select.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="vendors/owl_carousel/css/owl.carousel.css">
+    <!-- gijgo css -->
+    <link rel="stylesheet" href="vendors/gijgo/gijgo.min.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="vendors/font_awesome/css/all.min.css">
+    <link rel="stylesheet" href="vendors/tagsinput/tagsinput.css">
+    <!-- datatable CSS -->
+    <link rel="stylesheet" href="vendors/datatable/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="vendors/datatable/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="vendors/datatable/css/buttons.dataTables.min.css">
+    <!-- text editor css -->
+    <link rel="stylesheet" href="vendors/text_editor/summernote-bs4.css">
+    <!-- morris css -->
+    <link rel="stylesheet" href="vendors/morris/morris.css">
+    <!-- metarial icon css -->
+    <link rel="stylesheet" href="vendors/material_icon/material-icons.css">
+
+    <!-- menu css  -->
+    <link rel="stylesheet" href="css/metisMenu.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS">
+<style type="text/css">.apexcharts-canvas {
+  position: relative;
+  user-select: none;
+  /* cannot give overflow: hidden as it will crop tooltips which overflow outside chart area */
+}
+
+/* scrollbar is not visible by default for legend, hence forcing the visibility */
+.apexcharts-canvas ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+}
+.apexcharts-canvas ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(255,255,255,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+.apexcharts-canvas.dark {
+  background: #343F57;
+}
+
+.apexcharts-inner {
+  position: relative;
+}
+
+.legend-mouseover-inactive {
+  transition: 0.15s ease all;
+  opacity: 0.20;
+}
+
+.apexcharts-series-collapsed {
+  opacity: 0;
+}
+
+.apexcharts-gridline, .apexcharts-text {
+  pointer-events: none;
+}
+
+.apexcharts-tooltip {
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px -4px #999;
+  cursor: default;
+  font-size: 14px;
+  left: 62px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 12;
+  transition: 0.15s ease all;
+}
+.apexcharts-tooltip.light {
+  border: 1px solid #e3e3e3;
+  background: rgba(255, 255, 255, 0.96);
+}
+.apexcharts-tooltip.dark {
+  color: #fff;
+  background: rgba(30,30,30, 0.8);
+}
+.apexcharts-tooltip * {
+  font-family: inherit;
+}
+
+.apexcharts-tooltip .apexcharts-marker,
+.apexcharts-area-series .apexcharts-area,
+.apexcharts-line {
+  pointer-events: none;
+}
+
+.apexcharts-tooltip.active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-tooltip-title {
+  padding: 6px;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.apexcharts-tooltip.light .apexcharts-tooltip-title {
+  background: #ECEFF1;
+  border-bottom: 1px solid #ddd;
+}
+.apexcharts-tooltip.dark .apexcharts-tooltip-title {
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #333;
+}
+
+.apexcharts-tooltip-text-value,
+.apexcharts-tooltip-text-z-value {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.apexcharts-tooltip-text-z-label:empty,
+.apexcharts-tooltip-text-z-value:empty {
+  display: none;
+}
+
+.apexcharts-tooltip-text-value,
+.apexcharts-tooltip-text-z-value {
+  font-weight: 600;
+}
+
+.apexcharts-tooltip-marker {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.apexcharts-tooltip-series-group {
+  padding: 0 10px;
+  display: none;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+}
+
+.apexcharts-tooltip-series-group.active .apexcharts-tooltip-marker {
+  opacity: 1;
+}
+.apexcharts-tooltip-series-group.active, .apexcharts-tooltip-series-group:last-child {
+  padding-bottom: 4px;
+}
+.apexcharts-tooltip-series-group-hidden {
+  opacity: 0;
+  height: 0;
+  line-height: 0;
+  padding: 0 !important;
+}
+.apexcharts-tooltip-y-group {
+  padding: 6px 0 5px;
+}
+.apexcharts-tooltip-candlestick {
+  padding: 4px 8px;
+}
+.apexcharts-tooltip-candlestick > div {
+  margin: 4px 0;
+}
+.apexcharts-tooltip-candlestick span.value {
+  font-weight: bold;
+}
+
+.apexcharts-tooltip-rangebar {
+  padding: 5px 8px;
+}
+
+.apexcharts-tooltip-rangebar .category {
+  font-weight: 600;
+  color: #777;
+}
+
+.apexcharts-tooltip-rangebar .series-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.apexcharts-xaxistooltip {
+  opacity: 0;
+  padding: 9px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xaxistooltip.dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-xaxistooltip:after, .apexcharts-xaxistooltip:before {
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.apexcharts-xaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-left: -6px;
+}
+.apexcharts-xaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-left: -7px;
+}
+
+.apexcharts-xaxistooltip-bottom:after, .apexcharts-xaxistooltip-bottom:before {
+  bottom: 100%;
+}
+
+.apexcharts-xaxistooltip-top:after, .apexcharts-xaxistooltip-top:before {
+  top: 100%;
+}
+
+.apexcharts-xaxistooltip-bottom:after {
+  border-bottom-color: #ECEFF1;
+}
+.apexcharts-xaxistooltip-bottom:before {
+  border-bottom-color: #90A4AE;
+}
+
+.apexcharts-xaxistooltip-bottom.dark:after {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+.apexcharts-xaxistooltip-bottom.dark:before {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-top:after {
+  border-top-color:#ECEFF1
+}
+.apexcharts-xaxistooltip-top:before {
+  border-top-color: #90A4AE;
+}
+.apexcharts-xaxistooltip-top.dark:after {
+  border-top-color:rgba(0, 0, 0, 0.5);
+}
+.apexcharts-xaxistooltip-top.dark:before {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.apexcharts-xaxistooltip.active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-yaxistooltip {
+  opacity: 0;
+  padding: 4px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+}
+
+.apexcharts-yaxistooltip.dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-yaxistooltip:after, .apexcharts-yaxistooltip:before {
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.apexcharts-yaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-top: -6px;
+}
+.apexcharts-yaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-top: -7px;
+}
+
+.apexcharts-yaxistooltip-left:after, .apexcharts-yaxistooltip-left:before {
+  left: 100%;
+}
+
+.apexcharts-yaxistooltip-right:after, .apexcharts-yaxistooltip-right:before {
+  right: 100%;
+}
+
+.apexcharts-yaxistooltip-left:after {
+  border-left-color: #ECEFF1;
+}
+.apexcharts-yaxistooltip-left:before {
+  border-left-color: #90A4AE;
+}
+.apexcharts-yaxistooltip-left.dark:after {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+.apexcharts-yaxistooltip-left.dark:before {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-right:after {
+  border-right-color: #ECEFF1;
+}
+.apexcharts-yaxistooltip-right:before {
+  border-right-color: #90A4AE;
+}
+.apexcharts-yaxistooltip-right.dark:after {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+.apexcharts-yaxistooltip-right.dark:before {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip.active {
+  opacity: 1;
+}
+.apexcharts-yaxistooltip-hidden {
+  display: none;
+}
+
+.apexcharts-xcrosshairs, .apexcharts-ycrosshairs {
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xcrosshairs.active, .apexcharts-ycrosshairs.active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-ycrosshairs-hidden {
+  opacity: 0;
+}
+
+.apexcharts-zoom-rect {
+  pointer-events: none;
+}
+.apexcharts-selection-rect {
+  cursor: move;
+}
+
+.svg_select_points, .svg_select_points_rot {
+  opacity: 0;
+  visibility: hidden;
+}
+.svg_select_points_l, .svg_select_points_r {
+  cursor: ew-resize;
+  opacity: 1;
+  visibility: visible;
+  fill: #888;
+}
+.apexcharts-canvas.zoomable .hovering-zoom {
+  cursor: crosshair
+}
+.apexcharts-canvas.zoomable .hovering-pan {
+  cursor: move
+}
+
+.apexcharts-xaxis,
+.apexcharts-yaxis {
+  pointer-events: none;
+}
+
+.apexcharts-zoom-icon,
+.apexcharts-zoom-in-icon,
+.apexcharts-zoom-out-icon,
+.apexcharts-reset-zoom-icon,
+.apexcharts-pan-icon,
+.apexcharts-selection-icon,
+.apexcharts-menu-icon,
+.apexcharts-toolbar-custom-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  color: #6E8192;
+  text-align: center;
+}
+
+
+.apexcharts-zoom-icon svg,
+.apexcharts-zoom-in-icon svg,
+.apexcharts-zoom-out-icon svg,
+.apexcharts-reset-zoom-icon svg,
+.apexcharts-menu-icon svg {
+  fill: #6E8192;
+}
+.apexcharts-selection-icon svg {
+  fill: #444;
+  transform: scale(0.76)
+}
+
+.dark .apexcharts-zoom-icon svg,
+.dark .apexcharts-zoom-in-icon svg,
+.dark .apexcharts-zoom-out-icon svg,
+.dark .apexcharts-reset-zoom-icon svg,
+.dark .apexcharts-pan-icon svg,
+.dark .apexcharts-selection-icon svg,
+.dark .apexcharts-menu-icon svg,
+.dark .apexcharts-toolbar-custom-icon svg{
+  fill: #f3f4f5;
+}
+
+.apexcharts-canvas .apexcharts-zoom-icon.selected svg,
+.apexcharts-canvas .apexcharts-selection-icon.selected svg,
+.apexcharts-canvas .apexcharts-reset-zoom-icon.selected svg {
+  fill: #008FFB;
+}
+.light .apexcharts-selection-icon:not(.selected):hover svg,
+.light .apexcharts-zoom-icon:not(.selected):hover svg,
+.light .apexcharts-zoom-in-icon:hover svg,
+.light .apexcharts-zoom-out-icon:hover svg,
+.light .apexcharts-reset-zoom-icon:hover svg,
+.light .apexcharts-menu-icon:hover svg {
+  fill: #333;
+}
+
+.apexcharts-selection-icon, .apexcharts-menu-icon {
+  position: relative;
+}
+.apexcharts-reset-zoom-icon {
+  margin-left: 5px;
+}
+.apexcharts-zoom-icon, .apexcharts-reset-zoom-icon, .apexcharts-menu-icon {
+  transform: scale(0.85);
+}
+
+.apexcharts-zoom-in-icon, .apexcharts-zoom-out-icon {
+  transform: scale(0.7)
+}
+
+.apexcharts-zoom-out-icon {
+  margin-right: 3px;
+}
+
+.apexcharts-pan-icon {
+  transform: scale(0.62);
+  position: relative;
+  left: 1px;
+  top: 0px;
+}
+.apexcharts-pan-icon svg {
+  fill: #fff;
+  stroke: #6E8192;
+  stroke-width: 2;
+}
+.apexcharts-pan-icon.selected svg {
+  stroke: #008FFB;
+}
+.apexcharts-pan-icon:not(.selected):hover svg {
+  stroke: #333;
+}
+
+.apexcharts-toolbar {
+  position: absolute;
+  z-index: 11;
+  top: 0px;
+  right: 3px;
+  max-width: 176px;
+  text-align: right;
+  border-radius: 3px;
+  padding: 0px 6px 2px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apexcharts-toolbar svg {
+  pointer-events: none;
+}
+
+.apexcharts-menu {
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 3px;
+  right: 10px;
+  opacity: 0;
+  min-width: 110px;
+  transition: 0.15s ease all;
+  pointer-events: none;
+}
+
+.apexcharts-menu.open {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-menu-item {
+  padding: 6px 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.light .apexcharts-menu-item:hover {
+  background: #eee;
+}
+.dark .apexcharts-menu {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .apexcharts-toolbar {
+    /*opacity: 0;*/
+  }
+
+  .apexcharts-canvas:hover .apexcharts-toolbar {
+    opacity: 1;
+  }
+}
+
+.apexcharts-datalabel.hidden {
+  opacity: 0;
+}
+
+.apexcharts-pie-label,
+.apexcharts-datalabel, .apexcharts-datalabel-label, .apexcharts-datalabel-value {
+  cursor: default;
+  pointer-events: none;
+}
+
+.apexcharts-pie-label-delay {
+  opacity: 0;
+  animation-name: opaque;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.apexcharts-canvas .hidden {
+  opacity: 0;
+}
+
+.apexcharts-hide .apexcharts-series-points {
+  opacity: 0;
+}
+
+.apexcharts-area-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
+.apexcharts-line-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events, .apexcharts-radar-series path, .apexcharts-radar-series polygon {
+  pointer-events: none;
+}
+
+/* markers */
+
+.apexcharts-marker {
+  transition: 0.15s ease all;
+}
+
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Resize generated styles */
+@keyframes resizeanim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.resize-triggers {
+  animation: 1ms resizeanim;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.resize-triggers, .resize-triggers > div, .contract-trigger:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.resize-triggers > div {
+  background: #eee;
+  overflow: auto;
+}
+
+.contract-trigger:before {
+  width: 200%;
+  height: 200%;
+}
+</style></head>
+<body class="crm_body_bg" cz-shortcut-listen="true">
+    
+
+
+<!-- main content part here -->
+ 
+ <!-- sidebar  -->
+ <!-- sidebar part here -->
+ <nav class="sidebar">
+  <div class="logo d-flex justify-content-between">
+      <a href="index.html"><img src="img/logo.png" alt=""></a>
+      <div class="sidebar_close_icon d-lg-none">
+          <i class="ti-close"></i>
+      </div>
+  </div>
+  <ul id="sidebar_menu" class="metismenu">
+      <li>
+        <a class="has-arrow" href="#" aria-expanded="false">
+        <!-- <i class="fas fa-th"></i> -->
+        <img src="img/menu-icon/dashboard.svg" alt="">
+          <span>Dashboard</span>
+        </a>
+        <ul class="mm-collapse">
+          <li><a href="index.html">Directory</a></li>
+          <li><a href="index_2.html">Default</a></li>
+        </ul>
+
+      </li>
+      <li class="mm-active">
+        <a class="has-arrow" href="#" aria-expanded="true">
+          <img src="img/menu-icon/2.svg" alt="">
+          <span>Pages</span>
+        </a>
+        <ul class="mm-collapse mm-show">
+          <li><a class="active" href="login.html">Login</a></li>
+          <li><a href="resister.html">Register</a></li>
+          <li><a href="error_400.html">Error 404</a></li>
+          <li><a href="error_500.html">Error 500</a></li>
+          <li><a href="forgot_pass.html">Forgot Password</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </li>
+
+      <li class="">
+        <a class="has-arrow" href="#" aria-expanded="false">
+          <img src="img/menu-icon/3.svg" alt="">
+          <span>Applications</span>
+        </a>
+        <ul class="mm-collapse">
+          <li><a href="mail_box.html">Mail Box</a></li>
+          <li><a href="chat.html">Chat</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </li>
+
+      <li class="">
+        <a class="has-arrow" href="#" aria-expanded="false">
+          <img src="img/menu-icon/4.svg" alt="">
+          <span>Components</span>
+        </a>
+        <ul class="mm-collapse">
+          <li><a href="accordion.html">Accordions</a></li>
+          <li><a href="Scrollable.html">Scrollable</a></li>
+          <li><a href="notification.html">Notifications</a></li>
+          <li><a href="carousel.html">Carousel</a></li>
+          <li><a href="Pagination.html">Pagination</a></li>
+        </ul>
+      </li>
+
+      <li class="">
+        <a class="has-arrow" href="#" aria-expanded="false">
+          <img src="img/menu-icon/5.svg" alt="">
+          <span>UI Elements</span>
+        </a>
+        <ul class="mm-collapse">
+            <li><a href="buttons.html">Buttons</a></li>
+            <li><a href="dropdown.html">Droopdowns</a></li>
+            <li><a href="Badges.html">Badges</a></li>
+            <li><a href="Loading_Indicators.html">Loading Indicators</a></li>
+            <li><a href="State_color.html">State color</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="datepicker.html">Date Picker</a></li>
+        </ul>
+      </li>
+
+      <li class="">
+        <a class="has-arrow" href="#" aria-expanded="false">
+          <img src="img/menu-icon/6.svg" alt="">
+          <span>Animations</span>
+        </a>
+        <ul class="mm-collapse">
+            <li><a href="wow_animation.html">Animate</a></li>
+            <li><a href="Scroll_Reveal.html">Scroll Reveal</a></li>
+            <li><a href="tilt.html">Tilt Animation</a></li>
+            
+        </ul>
+      </li>
+
+      <li class="">
+        <a class="has-arrow" href="#" aria-expanded="false">
+          <img src="img/menu-icon/7.svg" alt="">
+          <span>Cards</span>
+        </a>
+        <ul class="mm-collapse">
+            <li><a href="basic_card.html">Basic Card</a></li>
+            <li><a href="theme_card.html">Theme Card</a></li>
+            <li><a href="dargable_card.html">Draggable Card</a></li>
+        </ul>
+      </li>
+
+      <li class="">
+        <a class="has-arrow" href="#" aria-expanded="false">
+          <img src="img/menu-icon/8.svg" alt="">
+          <span>Table</span>
+        </a>
+        <ul class="mm-collapse">
+            <li><a href="data_table.html">Data Tables</a></li>
+            <li><a href="bootstrap_table.html">Grid Tables</a></li>
+        </ul>
+      </li>
+
+      <li class="">
+        <a class="has-arrow" href="#" aria-expanded="false">
+          <img src="img/menu-icon/9.svg" alt="">
+          <span>Charts</span>
+        </a>
+        <ul class="mm-collapse">
+          <li><a href="chartjs.html">ChartJS</a></li>
+          <li><a href="apex_chart.html">Apex Charts</a></li>
+          <li><a href="chart_sparkline.html">Chart sparkline</a></li>
+          <li><a href="am_chart.html">am-charts</a></li>
+          <li><a href="nvd3_charts.html">nvd3 charts.</a></li>
+        </ul>
+      </li>
+      
+
+      <li class="">
+        <a class="has-arrow" href="#" aria-expanded="false">
+          <img src="img/menu-icon/10.svg" alt="">
+          <span>Widgets</span>
+        </a>
+        <ul class="mm-collapse">
+          <li><a href="chart_box_1.html">Chart Boxes 1</a></li>
+          <li><a href="profilebox.html">Profile Box</a></li>
+        </ul>
+      </li>
+      
+
+      <li class="">
+        <a class="has-arrow" href="#" aria-expanded="false">
+          <img src="img/menu-icon/map.svg" alt="">
+          <span>Maps</span>
+        </a>
+        <ul class="mm-collapse">
+          <li><a href="mapjs.html">Maps JS</a></li>
+          <li><a href="vector_map.html">Vector Maps</a></li>
+        </ul>
+      </li>
+
+
+    </ul>
+  
+</nav>
+<!-- sidebar part end -->
+<!--/ sidebar  -->
+
+
+<section class="main_content dashboard_part">
+        <!-- menu  -->
+        <div class="container-fluid g-0">
+          <div class="row">
+              <div class="col-lg-12 p-0 ">
+                  <div class="header_iner d-flex justify-content-between align-items-center">
+                      <div class="sidebar_icon d-lg-none">
+                          <i class="ti-menu"></i>
+                      </div>
+                      <div class="serach_field-area">
+                              <div class="search_inner">
+                                  <form action="#">
+                                      <div class="search_field">
+                                          <input type="text" placeholder="Search here...">
+                                      </div>
+                                      <button type="submit"> <img src="img/icon/icon_search.svg" alt=""> </button>
+                                  </form>
+                              </div>
+                          </div>
+                      <div class="header_right d-flex justify-content-between align-items-center">
+                          <div class="header_notification_warp d-flex align-items-center">
+                              <li>
+                                  <a class="bell_notification_clicker" href="#"> <img src="img/icon/bell.svg" alt="">
+                                      <span>04</span>
+                                  </a>
+                                  <!-- Menu_NOtification_Wrap  -->
+                              <div class="Menu_NOtification_Wrap">
+                                  <div class="notification_Header">
+                                      <h4>Notifications</h4>
+                                  </div>
+                                  <div class="Notification_body">
+                                      <!-- single_notify  -->
+                                      <div class="single_notify d-flex align-items-center">
+                                          <div class="notify_thumb">
+                                              <a href="#"><img src="img/staf/2.png" alt=""></a>
+                                          </div>
+                                          <div class="notify_content">
+                                              <a href="#"><h5>Cool Directory </h5></a>
+                                              <p>Lorem ipsum dolor sit amet</p>
+                                          </div>
+                                      </div>
+                                      <!-- single_notify  -->
+                                      <div class="single_notify d-flex align-items-center">
+                                          <div class="notify_thumb">
+                                              <a href="#"><img src="img/staf/4.png" alt=""></a>
+                                          </div>
+                                          <div class="notify_content">
+                                              <a href="#"><h5>Awesome packages</h5></a>
+                                              <p>Lorem ipsum dolor sit amet</p>
+                                          </div>
+                                      </div>
+                                      <!-- single_notify  -->
+                                      <div class="single_notify d-flex align-items-center">
+                                          <div class="notify_thumb">
+                                              <a href="#"><img src="img/staf/3.png" alt=""></a>
+                                          </div>
+                                          <div class="notify_content">
+                                              <a href="#"><h5>what a packages</h5></a>
+                                              <p>Lorem ipsum dolor sit amet</p>
+                                          </div>
+                                      </div>
+                                      <!-- single_notify  -->
+                                      <div class="single_notify d-flex align-items-center">
+                                          <div class="notify_thumb">
+                                              <a href="#"><img src="img/staf/2.png" alt=""></a>
+                                          </div>
+                                          <div class="notify_content">
+                                              <a href="#"><h5>Cool Directory </h5></a>
+                                              <p>Lorem ipsum dolor sit amet</p>
+                                          </div>
+                                      </div>
+                                      <!-- single_notify  -->
+                                      <div class="single_notify d-flex align-items-center">
+                                          <div class="notify_thumb">
+                                              <a href="#"><img src="img/staf/4.png" alt=""></a>
+                                          </div>
+                                          <div class="notify_content">
+                                              <a href="#"><h5>Awesome packages</h5></a>
+                                              <p>Lorem ipsum dolor sit amet</p>
+                                          </div>
+                                      </div>
+                                      <!-- single_notify  -->
+                                      <div class="single_notify d-flex align-items-center">
+                                          <div class="notify_thumb">
+                                              <a href="#"><img src="img/staf/3.png" alt=""></a>
+                                          </div>
+                                          <div class="notify_content">
+                                              <a href="#"><h5>what a packages</h5></a>
+                                              <p>Lorem ipsum dolor sit amet</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="nofity_footer">
+                                      <div class="submit_button text-center pt_20">
+                                          <a href="#" class="btn_1">See More</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--/ Menu_NOtification_Wrap  -->
+                              </li>
+                              <li>
+                                  <a class="CHATBOX_open" href="#"> <img src="img/icon/msg.svg" alt="">  <span>01</span> </a>
+                              </li>
+                          </div>
+                          <div class="profile_info">
+                              <img src="img/client_img.png" alt="#">
+                              <div class="profile_info_iner">
+                                  <div class="profile_author_name">
+                                      <p>Neurologist </p>
+                                      <h5>Dr. Robar Smith</h5>
+                                  </div>
+                                  <div class="profile_info_details">
+                                      <a href="#">My Profile </a>
+                                      <a href="#">Settings</a>
+                                      <a href="#">Log Out </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--/ menu  -->
+    <div class="main_content_iner ">
+        <div class="container-fluid p-0">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="dashboard_header mb_50">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="dashboard_header_title">
+                                <h3>Login</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="dashboard_breadcam text-end">
+                                <p><a href="index.html">Dashboard</a> <i class="fas fa-caret-right"></i> login</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-12">
+                    <div class="white_box mb_30">
+                        <div class="row justify-content-center">
+                          
+                            <div class="col-lg-6">
+                                <!-- sign_in  -->
+                                <div class="modal-content cs_modal">
+                                    <div class="modal-header justify-content-center theme_bg_1">
+                                        <h5 class="modal-title text_white">Log in</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="">
+                                                <input type="text" class="form-control" placeholder="Enter your email">
+                                            </div>
+                                            <div class="">
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </div>
+                                            <a href="#" class="btn_1 full_width text-center">Log in</a>
+                                            <p>Need an account? <a data-bs-toggle="modal" data-bs-target="#sing_up" data-bs-dismiss="modal" href="#"> Sign Up</a></p>
+                                            <div class="text-center">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#forgot_password" data-bs-dismiss="modal" class="pass_forget_btn">Forget Password?</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+
+        </div>
+    </div>
+
+<!-- footer part -->
+<div class="footer_part">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer_iner text-center">
+                    <p>2020 © Influence - Designed by <a href="#"> <i class="ti-heart"></i> </a><a href="#"> Dashboard</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div></section>
+<!-- main content part end -->
+<!-- ### CHAT_MESSAGE_BOX   ### -->
+
+<div class="CHAT_MESSAGE_POPUPBOX">
+  <div class="CHAT_POPUP_HEADER">
+  <div class="MSEESAGE_CHATBOX_CLOSE">
+  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7.09939 5.98831L11.772 10.661C12.076 10.965 12.076 11.4564 11.772 11.7603C11.468 12.0643 10.9766 12.0643 10.6726 11.7603L5.99994 7.08762L1.32737 11.7603C1.02329 12.0643 0.532002 12.0643 0.228062 11.7603C-0.0760207 11.4564 -0.0760207 10.965 0.228062 10.661L4.90063 5.98831L0.228062 1.3156C-0.0760207 1.01166 -0.0760207 0.520226 0.228062 0.216286C0.379534 0.0646715 0.578697 -0.0114918 0.777717 -0.0114918C0.976738 -0.0114918 1.17576 0.0646715 1.32737 0.216286L5.99994 4.889L10.6726 0.216286C10.8243 0.0646715 11.0233 -0.0114918 11.2223 -0.0114918C11.4213 -0.0114918 11.6203 0.0646715 11.772 0.216286C12.076 0.520226 12.076 1.01166 11.772 1.3156L7.09939 5.98831Z" fill="white"></path>
+  </svg>
+
+  </div>
+      <h3>Chat with us</h3>
+      <div class="Chat_Listed_member">
+          <ul>
+              <li>
+                  <a href="#">
+                      <div class="member_thumb">
+                       <img src="img/staf/1.png" alt="">
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <div class="member_thumb">
+                       <img src="img/staf/2.png" alt="">
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <div class="member_thumb">
+                       <img src="img/staf/3.png" alt="">
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <div class="member_thumb">
+                       <img src="img/staf/4.png" alt="">
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <div class="member_thumb">
+                       <img src="img/staf/5.png" alt="">
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <div class="member_thumb">
+                          <div class="more_member_count">
+                              <span>90+</span>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div class="CHAT_POPUP_BODY">
+      <p class="mesaged_send_date">
+      Sunday, 12 January
+      </p>
+  
+  <div class="CHATING_SENDER">
+      <div class="SMS_thumb">
+          <img src="img/staf/1.png" alt="">
+      </div>
+      <div class="SEND_SMS_VIEW">
+          <p>Hi! Welcome .
+          How can I help you?</p>
+      </div>
+  </div>
+  
+  <div class="CHATING_SENDER CHATING_RECEIVEr">
+      
+      <div class="SEND_SMS_VIEW">
+          <p>Hello</p>
+      </div>
+      <div class="SMS_thumb">
+          <img src="img/staf/1.png" alt="">
+      </div>
+  </div>
+  
+  </div>
+  <div class="CHAT_POPUP_BOTTOM">
+      <div class="chat_input_box d-flex align-items-center">
+          <div class="input-group">
+              <input type="text" class="form-control" placeholder="Write your message" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                  <button class="btn " type="button"> 
+                      <!-- svg      -->
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.7821 3.21895C14.4908 -1.07281 7.50882 -1.07281 3.2183 3.21792C-1.07304 7.50864 -1.07263 14.4908 3.21872 18.7824C7.50882 23.0729 14.4908 23.0729 18.7817 18.7815C23.0726 14.4908 23.0724 7.50906 18.7821 3.21895ZM17.5813 17.5815C13.9525 21.2103 8.04773 21.2108 4.41871 17.5819C0.78907 13.9525 0.789485 8.04714 4.41871 4.41832C8.04752 0.789719 13.9521 0.789304 17.5817 4.41874C21.2105 8.04755 21.2101 13.9529 17.5813 17.5815ZM6.89503 8.02162C6.89503 7.31138 7.47107 6.73534 8.18131 6.73534C8.89135 6.73534 9.46739 7.31117 9.46739 8.02162C9.46739 8.73228 8.89135 9.30811 8.18131 9.30811C7.47107 9.30811 6.89503 8.73228 6.89503 8.02162ZM12.7274 8.02162C12.7274 7.31138 13.3038 6.73534 14.0141 6.73534C14.7241 6.73534 15.3002 7.31117 15.3002 8.02162C15.3002 8.73228 14.7243 9.30811 14.0141 9.30811C13.3038 9.30811 12.7274 8.73228 12.7274 8.02162ZM15.7683 13.2898C14.9712 15.1332 13.1043 16.3243 11.0126 16.3243C8.8758 16.3243 6.99792 15.1272 6.22834 13.2744C6.09642 12.9573 6.24681 12.593 6.56438 12.4611C6.64238 12.4289 6.72328 12.4136 6.80293 12.4136C7.04687 12.4136 7.27836 12.5577 7.37772 12.7973C7.95376 14.1842 9.38048 15.0799 11.0126 15.0799C12.6077 15.0799 14.0261 14.1836 14.626 12.7959C14.7625 12.4804 15.1288 12.335 15.4441 12.4717C15.7594 12.6084 15.9048 12.9745 15.7683 13.2898Z" fill="#707DB7"></path>
+                      </svg>
+
+                      <!-- svg      -->
+                  </button>
+                  <button class="btn" type="button">
+                       <!-- svg  -->
+                       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 0.289062C4.92455 0.289062 0 5.08402 0 10.9996C0 16.9152 4.92455 21.7101 11 21.7101C17.0755 21.7101 22 16.9145 22 10.9996C22 5.08472 17.0755 0.289062 11 0.289062ZM11 20.3713C5.68423 20.3713 1.375 16.1755 1.375 10.9996C1.375 5.82371 5.68423 1.62788 11 1.62788C16.3158 1.62788 20.625 5.82371 20.625 10.9996C20.625 16.1755 16.3158 20.3713 11 20.3713ZM15.125 10.3302H11.6875V6.98314C11.6875 6.61363 11.3795 6.31373 11 6.31373C10.6205 6.31373 10.3125 6.61363 10.3125 6.98314V10.3302H6.875C6.4955 10.3302 6.1875 10.6301 6.1875 10.9996C6.1875 11.3691 6.4955 11.669 6.875 11.669H10.3125V15.016C10.3125 15.3855 10.6205 15.6854 11 15.6854C11.3795 15.6854 11.6875 15.3855 11.6875 15.016V11.669H15.125C15.5045 11.669 15.8125 11.3691 15.8125 10.9996C15.8125 10.6301 15.5045 10.3302 15.125 10.3302Z" fill="#707DB7"></path>
+                      </svg>
+
+                       <!-- svg  -->
+                       <input type="file">
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--/### CHAT_MESSAGE_BOX  ### -->
+<!-- footer  -->
+<!-- jquery slim -->
+<script src="js/jquery1-3.4.1.min.js"></script>
+<!-- popper js -->
+<script src="js/popper1.min.js"></script>
+<!-- bootstarp js -->
+<script src="js/bootstrap1.min.js"></script>
+<!-- sidebar menu  -->
+<script src="js/metisMenu.js"></script>
+<!-- waypoints js -->
+<script src="vendors/count_up/jquery.waypoints.min.js"></script>
+<!-- waypoints js -->
+<script src="vendors/chartlist/Chart.min.js"></script>
+<!-- counterup js -->
+<script src="vendors/count_up/jquery.counterup.min.js"></script>
+<!-- swiper slider js -->
+<script src="vendors/swiper_slider/js/swiper.min.js"></script>
+<!-- nice select -->
+<script src="vendors/niceselect/js/jquery.nice-select.min.js"></script>
+<!-- owl carousel -->
+<script src="vendors/owl_carousel/js/owl.carousel.min.js"></script>
+<!-- gijgo css -->
+<script src="vendors/gijgo/gijgo.min.js"></script>
+<!-- responsive table -->
+<script src="vendors/datatable/js/jquery.dataTables.min.js"></script>
+<script src="vendors/datatable/js/dataTables.responsive.min.js"></script>
+<script src="vendors/datatable/js/dataTables.buttons.min.js"></script>
+<script src="vendors/datatable/js/buttons.flash.min.js"></script>
+<script src="vendors/datatable/js/jszip.min.js"></script>
+<script src="vendors/datatable/js/pdfmake.min.js"></script>
+<script src="vendors/datatable/js/vfs_fonts.js"></script>
+<script src="vendors/datatable/js/buttons.html5.min.js"></script>
+<script src="vendors/datatable/js/buttons.print.min.js"></script>
+
+<script src="js/chart.min.js"></script>
+<!-- progressbar js -->
+<script src="vendors/progressbar/jquery.barfiller.js"></script>
+<!-- tag input -->
+<script src="vendors/tagsinput/tagsinput.js"></script>
+<!-- text editor js -->
+<script src="vendors/text_editor/summernote-bs4.js"></script>
+
+<script src="vendors/apex_chart/apexcharts.js"></script>
+
+<!-- custom js -->
+<script src="js/custom.js"></script>
+
+
+
+
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg></body></html>
